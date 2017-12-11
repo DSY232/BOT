@@ -19,6 +19,7 @@ client.on('guildMemberAdd', (member) => {
     member.addRole('384420942010515466')
   }
   if (member.guild.id === '333689787267547146') {
+//        let chan = client.channels.
     member.setNickname(`🤘🏼${member.user.username}`)
     member.addRole('363755786117316608')
   }
