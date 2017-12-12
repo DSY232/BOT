@@ -22,8 +22,13 @@ client.on('guildMemberAdd', (member) => {
 //        let chan = client.channels.
     member.setNickname(`🤘🏼${member.user.username}`)
     member.addRole('363755786117316608')
+    member.guild.channels.get('353436192353681411').send(`**${member.user.username}** has joined!`)
   }
 });
+
+client.on('guildMemberRemove', (member) => {
+  member.guild.channels.get('353436192353681411').send(`**${member.user.username}** Leaved... bye bye `)
+})
 
 client.on('message', (message) => {
 
